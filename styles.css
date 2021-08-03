@@ -1,0 +1,22 @@
+:root {
+    --color_primary: hsl(172, 67%, 45%);
+    --color-button: hsl(183, 100%, 15%);
+    --color-text: hsl(183, 100%, 15%);
+    --color-text-label: hsl(186, 14%, 43%);
+    --color-icon: hsl(184, 14%, 56%);
+    --color-bg: hsl(185, 41%, 84%);
+    --color-bg-input: hsl(189, 41%, 97%);
+    --color-bg-container: hsl(0, 0%, 100%);
+    --color-error: red;
+    --color-validation: green;
+}
+
+body {
+    font-family: 'Space Mono';
+    font-size: 24px;
+    background-color: var(--color-bg);
+}
+
+.calculator {
+    background-color: var(--color-bg-container);
+}
