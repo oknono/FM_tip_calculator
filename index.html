@@ -29,7 +29,7 @@
     <h1 class="title">Splitter</h1>
     <div class="calculator">
       <label for="bill">Bill</label>
-      <input type="text" id="bill">
+      <input type="number" id="bill">
       <fieldset>
         <legend>Select Tip %</legend>
         <input type="radio" id="tip5" name="tip" value="tip5">
@@ -43,13 +43,20 @@
         <input type="radio" id="tip50" name="tip" value="tip5">
         <label for="tip50">50%</label>
       </fieldset>
-      <label for="pax">Number of People%</label>
-      <input type="text" id="pax">
+      <label for="pax">Number of People</label>
+      <input type="number" id="pax">
       <div class="result">
-        <div class="result_amount_title">Tip Amount / person</div>
-        <div class="result_amount_total">$4.27</div>
-        <div class="result_amount_title">Total/ person</div>
-        <div class="result_amount_total">$32.79</div>
+        <div class="result_amount">
+          <div class="result_amount_title">Tip Amount<span class="result_amount_title_small">/ person</span></div>
+
+          <div class="result_amount_total">$4.27</div>
+        </div>
+        <div class="result_amount">
+          <div class="result_amount_title">Total <span class="result_amount_title_small">/ person</span></div>
+          <div class="result_amount_total">$32.79</div>
+        </div>
+
+
         <button class="reset">Reset</button>
       </div>
     </div>
