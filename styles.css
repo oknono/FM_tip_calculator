@@ -14,6 +14,10 @@
     --border-radius-small: 5px;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -40,11 +44,9 @@ main {
     background-color: var(--color-bg-container);
     border-radius: var(--border-radius-large);
     padding: 32px;
-    width: 87%;
-    /* FIX: to keep border radius */
 }
 
-label {
+.input_label, legend {
     display: block;
     font-size: 16px;
 }
@@ -67,11 +69,12 @@ input[type="number"] {
     font-weight: 700;
     height: 48px;
     text-align: right;
-    width: 90%;
+    width: 100%;
     padding: 6px 18px;
+    margin-bottom: 32px;
 }
 
-label+input[type="number"] {
+label+input[type="number"], legend+label {
     margin-top: 6px;
 }
 
@@ -83,6 +86,52 @@ label+input[type="number"] {
     background-image: url(./images/icon-person.svg);
 }
 
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.radio {
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+}
+
+.radio__input input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio__input input:checked+.radio__control {
+    background-color: var(--color_primary);
+}
+
+.radio__input input:focus+.radio__control {
+    outline: 3px solid orange;
+}
+
+.radio__control {
+    background-color: var(--color-button);
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin-left: -30px;
+    border-radius: var(--border-radius-small);
+}
+
+.radio:focus-within .radio__label {
+    color: var(--color-text);
+}
+
+.radio__label {
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    color: white;
+}
+
 .result {
     background-color: var(--color-text);
     border-radius: var(--border-radius-large);
@@ -91,7 +140,6 @@ label+input[type="number"] {
     flex-direction: column;
     align-items: center;
     padding: 32px 24px;
-    margin-top: 32px;
 }
 
 .result_amount {

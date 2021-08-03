@@ -28,22 +28,47 @@
   <main>
     <h1 class="title">Splitter</h1>
     <div class="calculator">
-      <label for="bill">Bill</label>
+      <label class="input_label" for="bill">Bill</label>
       <input type="number" id="bill">
       <fieldset>
         <legend>Select Tip %</legend>
-        <input type="radio" id="tip5" name="tip" value="tip5">
-        <label for="tip5">5%</label>
-        <input type="radio" id="tip10" name="tip" value="tip5">
-        <label for="tip10">10%</label>
-        <input type="radio" id="tip15" name="tip" value="tip5">
-        <label for="tip15">15%</label>
-        <input type="radio" id="tip25" name="tip" value="tip5">
-        <label for="tip25">25%</label>
-        <input type="radio" id="tip50" name="tip" value="tip5">
-        <label for="tip50">50%</label>
+        <label class="radio radio_label_org">
+          <span class="radio__input">
+            <input type="radio" name="tip" value="tip5">
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">5%</span>
+        </label>
+        <label class="radio radio_label_org">
+          <span class="radio__input">
+            <input type="radio" name="tip" value="tip10">
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">10%</span>
+        </label>
+        <label class="radio radio_label_org">
+          <span class="radio__input">
+            <input type="radio" name="tip" value="tip15">
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">15%</span>
+        </label>
+        <label class="radio radio_label_org">
+          <span class="radio__input">
+            <input type="radio" name="tip" value="tip25">
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">25%</span>
+        </label>
+        <label class="radio radio_label_org">
+          <span class="radio__input">
+            <input type="radio" name="tip" value="tip5">
+            <span class="radio__control"></span>
+          </span>
+          <span class="radio__label">50%</span>
+        </label>
       </fieldset>
-      <label for="pax">Number of People</label>
+      <label class="input_label" for="pax">Number of People</label>
       <input type="number" id="pax">
       <div class="result">
         <div class="result_amount">
