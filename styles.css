@@ -115,7 +115,7 @@ fieldset {
 .radio__control {
     background-color: var(--color-button);
     display: inline-block;
-    width: 50%;
+    width: 140px;
     height: 50px;
     margin-left: -30px;
     border-radius: var(--border-radius-small);
