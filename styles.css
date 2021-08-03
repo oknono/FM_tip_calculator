@@ -51,9 +51,9 @@ main {
     font-size: 16px;
 }
 
-input:focus, button:focus {
+/* input:focus, button:focus {
     outline: 3px solid orange;
-}
+} */
 
 input[type="number"] {
     -moz-appearance: textfield;
@@ -108,9 +108,9 @@ fieldset {
     background-color: var(--color_primary);
 }
 
-.radio__input input:focus+.radio__control {
+/* .radio__input input:focus+.radio__control {
     outline: 3px solid orange;
-}
+} */
 
 .radio__control {
     background-color: var(--color-button);
@@ -178,4 +178,10 @@ fieldset {
     padding: 9px 0;
     text-transform: uppercase;
     width: 100%;
+}
+
+#reset:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+    color: lightgray;
 }

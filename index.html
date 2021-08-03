@@ -30,47 +30,47 @@
     <h1 class="title">Splitter</h1>
     <div class="calculator">
       <label class="input_label" for="bill">Bill</label>
-      <input type="number" id="bill" value=100.00>
+      <input type="number" id="bill" value=100.00 required>
       <fieldset>
         <legend>Select Tip %</legend>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip5" checked>
+            <input type="radio" name="tip" value="5" checked>
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">5%</span>
         </label>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip10">
+            <input type="radio" name="tip" value="10">
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">10%</span>
         </label>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip15">
+            <input type="radio" name="tip" value="15">
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">15%</span>
         </label>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip25">
+            <input type="radio" name="tip" value="25">
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">25%</span>
         </label>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip5">
+            <input type="radio" name="tip" value="50">
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">50%</span>
         </label>
       </fieldset>
       <label class="input_label" for="pax">Number of People</label>
-      <input type="number" id="pax" value=1>
+      <input type="number" id="pax" value=1 required min-value="1">
       <div class="result">
         <div class="result_amount">
           <div class="result_amount_title">Tip Amount<span class="result_amount_title_small">/ person</span></div>
@@ -81,7 +81,7 @@
           <div class="result_amount_title">Total <span class="result_amount_title_small">/ person</span></div>
           <div class="result_amount_total total_person"></div>
         </div>
-        <button id="reset">Reset</button>
+        <button id="reset" disabled>Reset</button>
       </div>
     </div>
   </main>
