@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono:wght@400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script defer src="script.js"></script>
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,12 +30,12 @@
     <h1 class="title">Splitter</h1>
     <div class="calculator">
       <label class="input_label" for="bill">Bill</label>
-      <input type="number" id="bill">
+      <input type="number" id="bill" value=100.00>
       <fieldset>
         <legend>Select Tip %</legend>
         <label class="radio radio_label_org">
           <span class="radio__input">
-            <input type="radio" name="tip" value="tip5">
+            <input type="radio" name="tip" value="tip5" checked>
             <span class="radio__control"></span>
           </span>
           <span class="radio__label">5%</span>
@@ -69,20 +70,18 @@
         </label>
       </fieldset>
       <label class="input_label" for="pax">Number of People</label>
-      <input type="number" id="pax">
+      <input type="number" id="pax" value=1>
       <div class="result">
         <div class="result_amount">
           <div class="result_amount_title">Tip Amount<span class="result_amount_title_small">/ person</span></div>
 
-          <div class="result_amount_total">$4.27</div>
+          <div class="result_amount_total tip_person"></div>
         </div>
         <div class="result_amount">
           <div class="result_amount_title">Total <span class="result_amount_title_small">/ person</span></div>
-          <div class="result_amount_total">$32.79</div>
+          <div class="result_amount_total total_person"></div>
         </div>
-
-
-        <button class="reset">Reset</button>
+        <button id="reset">Reset</button>
       </div>
     </div>
   </main>
@@ -90,7 +89,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://oknono.dev">Kirsten</a>.
   </div>
-  <script scr="index.js"></script>
 </body>
 
 </html>

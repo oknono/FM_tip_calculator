@@ -168,7 +168,7 @@ fieldset {
     color: var(--color_primary);
 }
 
-.reset {
+#reset {
     background-color: var(--color_primary);
     border-radius: var(--border-radius-small);
     border: none;
